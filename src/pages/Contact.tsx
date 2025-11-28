@@ -4,7 +4,7 @@ import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, MapPin, Clock } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -24,10 +24,66 @@ const Contact = () => {
             </p>
           </div>
 
-          <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 animate-fade-in-up">
+          {/* Google Map */}
+          <div className="mb-12 animate-fade-in">
+            <Card className="overflow-hidden shadow-soft">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.9876543210123!2d72.5687!3d23.0225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e848aba5bd449%3A0x4fcedd11614f6516!2sAdani%20Shantigram%20Jain%20Temple!5e0!3m2!1sen!2sin!4v1234567890"
+                width="100%"
+                height="450"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Adani Shantigram Jain Temple Location"
+              ></iframe>
+            </Card>
+          </div>
+
+          <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12 animate-fade-in-up">
+            {/* Address */}
+            <Card className="p-8 text-center shadow-soft hover:shadow-warm transition-shadow">
+              <div className="w-16 h-16 rounded-full spiritual-gradient flex items-center justify-center mx-auto mb-4 shadow-warm">
+                <MapPin className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-xl font-serif font-bold mb-3 text-primary">Address</h3>
+              <p className="text-muted-foreground">
+                Adani Shantigram Jain Temple,<br />
+                Ahmedabad
+              </p>
+            </Card>
+
+            {/* Email */}
+            <Card className="p-8 text-center shadow-soft hover:shadow-warm transition-shadow">
+              <div className="w-16 h-16 rounded-full spiritual-gradient flex items-center justify-center mx-auto mb-4 shadow-warm">
+                <Mail className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-xl font-serif font-bold mb-3 text-primary">Mail</h3>
+              <a 
+                href="mailto:Support@siddhijambuparivar.com"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                Support@siddhijambuparivar.com
+              </a>
+            </Card>
+
+            {/* Hours */}
+            <Card className="p-8 text-center shadow-soft hover:shadow-warm transition-shadow">
+              <div className="w-16 h-16 rounded-full spiritual-gradient flex items-center justify-center mx-auto mb-4 shadow-warm">
+                <Clock className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-xl font-serif font-bold mb-3 text-primary">Hours</h3>
+              <p className="text-muted-foreground">
+                Monday - Saturday<br />
+                9:00 AM - 6:00 PM
+              </p>
+            </Card>
+          </div>
+
+          <div className="max-w-3xl mx-auto animate-fade-in-up">
             {/* Contact Form */}
             <Card className="p-8 shadow-soft">
-              <h2 className="text-2xl font-serif font-bold mb-6 text-primary">
+              <h2 className="text-2xl font-serif font-bold mb-6 text-primary text-center">
                 Send us a Message
               </h2>
               <form className="space-y-6">
@@ -97,62 +153,6 @@ const Contact = () => {
                 </Button>
               </form>
             </Card>
-
-            {/* Contact Information */}
-            <div className="space-y-6">
-              <Card className="p-8 shadow-soft">
-                <h2 className="text-2xl font-serif font-bold mb-6 text-primary">
-                  Contact Information
-                </h2>
-                <div className="space-y-6">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 rounded-lg spiritual-gradient flex items-center justify-center flex-shrink-0 shadow-warm">
-                      <Mail className="w-6 h-6 text-white" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold mb-1">Email</h3>
-                      <p className="text-muted-foreground">
-                        info@siddhijambuparivar.org
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 rounded-lg spiritual-gradient flex items-center justify-center flex-shrink-0 shadow-warm">
-                      <Phone className="w-6 h-6 text-white" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold mb-1">Phone</h3>
-                      <p className="text-muted-foreground">+91 XXX XXX XXXX</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 rounded-lg spiritual-gradient flex items-center justify-center flex-shrink-0 shadow-warm">
-                      <MapPin className="w-6 h-6 text-white" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold mb-1">Address</h3>
-                      <p className="text-muted-foreground">
-                        Mandal, Gujarat, India
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </Card>
-
-              <Card className="p-8 bg-gradient-to-br from-primary/10 to-secondary/10 border-primary/20">
-                <h3 className="text-xl font-serif font-bold mb-4">
-                  Visiting Hours
-                </h3>
-                <p className="text-foreground/80 mb-4">
-                  For personal visits and inquiries, please contact us in
-                  advance to schedule an appointment.
-                </p>
-                <p className="text-sm text-foreground/60">
-                  We welcome devotees, researchers, and anyone interested in
-                  learning more about Maharaj Saheb's life and teachings.
-                </p>
-              </Card>
-            </div>
           </div>
         </div>
       </main>
