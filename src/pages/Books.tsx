@@ -114,7 +114,7 @@ const Books = () => {
                         View Details
                       </Link>
                     </Button>
-                    {book.downloadUrl && (
+                    {book.downloadUrl && book.downloadUrl !== "#" && (
                       <Button
                         variant="outline"
                         size="icon"
@@ -123,7 +123,6 @@ const Books = () => {
                       >
                         <a 
                           href={book.downloadUrl} 
-                          download={`${book.title}.pdf`}
                           target="_blank" 
                           rel="noopener noreferrer"
                         >

@@ -99,7 +99,7 @@ const BookDetail = () => {
                 </div>
               </Card>
 
-              {book.downloadUrl && (
+              {book.downloadUrl && book.downloadUrl !== "#" && (
                 <Button
                   className="w-full spiritual-gradient text-white font-semibold shadow-warm hover:scale-105 transition-transform"
                   size="lg"
@@ -107,7 +107,6 @@ const BookDetail = () => {
                 >
                   <a 
                     href={book.downloadUrl} 
-                    download={`${book.title}.pdf`}
                     target="_blank" 
                     rel="noopener noreferrer"
                   >
