@@ -25,7 +25,7 @@ export const booksData: Book[] = [
     author: "Jambu Vijayaji",
     publisher: "Shri Mahavira Jaina Vidyalaya",
     productId: "244",
-    downloadUrl: "#",
+    downloadUrl: "https://siddhijambuparivar.com/wp-content/uploads/2022/11/Agam-02-Ang-02-Sutrakrutang-Sutra.pdf",
   },
   {
     id: "agam-03-ang-03-sthananga-sutra-part-01",
@@ -35,7 +35,7 @@ export const booksData: Book[] = [
     image: book2,
     author: "Jambu Vijayaji",
     publisher: "Shri Mahavira Jaina Vidyalaya",
-    downloadUrl: "#",
+    downloadUrl: "https://siddhijambuparivar.com/wp-content/uploads/2022/11/Agam-03-Ang-03-Sthananga-Sutra-Part-01.pdf",
   },
   {
     id: "agam-03-ang-03-sthananga-sutra-part-02",
@@ -45,7 +45,7 @@ export const booksData: Book[] = [
     image: book3,
     author: "Jambu Vijayaji",
     publisher: "Shri Mahavira Jaina Vidyalaya",
-    downloadUrl: "#",
+    downloadUrl: "https://siddhijambuparivar.com/wp-content/uploads/2022/11/Agam-03-Ang-03-Sthananga-Sutra-Part-02.pdf",
   },
   {
     id: "agam-03-ang-03-sthananga-sutra-part-03",
@@ -55,7 +55,7 @@ export const booksData: Book[] = [
     image: book4,
     author: "Jambu Vijayaji",
     publisher: "Shri Mahavira Jaina Vidyalaya",
-    downloadUrl: "#",
+    downloadUrl: "https://siddhijambuparivar.com/wp-content/uploads/2022/11/Agam-03-Ang-03-Sthananga-Sutra-Part-03.pdf",
   },
   {
     id: "agam-06-ang-06-gnatadharma-sutra",
@@ -65,7 +65,7 @@ export const booksData: Book[] = [
     image: book1,
     author: "Jambu Vijayaji",
     publisher: "Shri Mahavira Jaina Vidyalaya",
-    downloadUrl: "#",
+    downloadUrl: "https://siddhijambuparivar.com/wp-content/uploads/2022/11/Agam-06-Ang-06-Gnatadharma-Sutra.pdf",
   },
   {
     id: "agam-45-chulika-02-anuyogdwar-sutra-part-01",

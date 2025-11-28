@@ -105,9 +105,14 @@ const BookDetail = () => {
                   size="lg"
                   asChild
                 >
-                  <a href={book.downloadUrl} target="_blank" rel="noopener noreferrer">
+                  <a 
+                    href={book.downloadUrl} 
+                    download={`${book.title}.pdf`}
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
                     <Download className="w-5 h-5 mr-2" />
-                    Download
+                    Download PDF
                   </a>
                 </Button>
               )}

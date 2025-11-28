@@ -119,8 +119,14 @@ const Books = () => {
                         variant="outline"
                         size="icon"
                         asChild
+                        title="Download PDF"
                       >
-                        <a href={book.downloadUrl} target="_blank" rel="noopener noreferrer">
+                        <a 
+                          href={book.downloadUrl} 
+                          download={`${book.title}.pdf`}
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                        >
                           <Download className="w-4 h-4" />
                         </a>
                       </Button>
