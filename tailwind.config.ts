@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        'serif': ['Crimson Text', 'serif'],
-        'sans': ['Noto Sans', 'sans-serif'],
+        'serif': ['Cormorant Garamond', 'Georgia', 'serif'],
+        'sans': ['Inter', 'system-ui', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -71,7 +71,7 @@ export default {
         "fade-in": {
           "0%": {
             opacity: "0",
-            transform: "translateY(20px)"
+            transform: "translateY(8px)"
           },
           "100%": {
             opacity: "1",
@@ -81,7 +81,7 @@ export default {
         "fade-in-up": {
           "0%": {
             opacity: "0",
-            transform: "translateY(30px)"
+            transform: "translateY(16px)"
           },
           "100%": {
             opacity: "1",
@@ -91,11 +91,21 @@ export default {
         "scale-in": {
           "0%": {
             opacity: "0",
-            transform: "scale(0.95)"
+            transform: "scale(0.98)"
           },
           "100%": {
             opacity: "1",
             transform: "scale(1)"
+          }
+        },
+        "slide-in": {
+          "0%": {
+            transform: "translateX(-8px)",
+            opacity: "0"
+          },
+          "100%": {
+            transform: "translateX(0)",
+            opacity: "1"
           }
         },
         "accordion-down": {
@@ -116,11 +126,12 @@ export default {
         },
       },
       animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
-        "fade-in": "fade-in 0.6s ease-out",
-        "fade-in-up": "fade-in-up 0.8s ease-out",
-        "scale-in": "scale-in 0.5s ease-out",
+        "accordion-down": "accordion-down 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
+        "accordion-up": "accordion-up 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
+        "fade-in": "fade-in 0.8s cubic-bezier(0.4, 0, 0.2, 1)",
+        "fade-in-up": "fade-in-up 1s cubic-bezier(0.4, 0, 0.2, 1)",
+        "scale-in": "scale-in 0.6s cubic-bezier(0.4, 0, 0.2, 1)",
+        "slide-in": "slide-in 0.7s cubic-bezier(0.4, 0, 0.2, 1)",
       },
     },
   },
