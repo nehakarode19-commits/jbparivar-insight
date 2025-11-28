@@ -2,7 +2,8 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import heroImage from "@/assets/hero-image.jpg";
+import maharajPortrait from "@/assets/maharaj-portrait.png";
+import centenaryLogo from "@/assets/centenary-logo.png";
 import { ArrowRight, BookOpen, Calendar, Image as ImageIcon, Mail } from "lucide-react";
 
 const Index = () => {
@@ -59,11 +60,18 @@ const Index = () => {
             {/* Hero Image */}
             <div className="relative animate-scale-in">
               <div className="absolute inset-0 spiritual-gradient opacity-20 rounded-3xl blur-3xl"></div>
-              <img
-                src={heroImage}
-                alt="Jambuvijayji Maharaj Saheb in meditation"
-                className="relative rounded-3xl shadow-2xl w-full h-auto object-cover"
-              />
+              <div className="relative flex flex-col items-center space-y-6">
+                <img
+                  src={maharajPortrait}
+                  alt="Jambuvijayji Maharaj Saheb in white robes"
+                  className="rounded-3xl shadow-2xl w-full max-w-md h-auto object-cover"
+                />
+                <img
+                  src={centenaryLogo}
+                  alt="100th Birth Anniversary Celebration"
+                  className="w-48 h-auto"
+                />
+              </div>
             </div>
           </div>
         </div>

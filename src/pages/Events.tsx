@@ -7,35 +7,39 @@ const Events = () => {
   const events = [
     {
       id: 1,
-      title: "Birth Anniversary Celebration",
-      date: "1923 - Commemorated Annually",
-      location: "Mandal, Gujarat",
+      title: "श्रीजम्बूविजयजी म.सा. एवं वैयावच्चप्रेमी प.पू. मुनि श्रीनमस्कारविजयजी म.सा. की वार्षिक पुण्यतिथि",
+      titleEnglish: "Annual Punyatithi of Shri Jambuvijayji Maharaj Saheb",
+      date: "November 20 (Annually)",
+      location: "Various Locations",
       description:
-        "Annual celebration of Maharaj Saheb's birth with prayers, discourses, and community gathering.",
+        "Annual memorial day observing the punyatithi (death anniversary) of revered Jambuvijayji Maharaj Saheb and Muni Shri Namaskarvijayji Maharaj Saheb. The day is marked with prayers, spiritual discourses, and community gatherings to honor their memory and teachings.",
     },
     {
       id: 2,
-      title: "Diksha Anniversary",
-      date: "Commemorated Annually",
-      location: "Various Locations",
+      title: "ભવ્ય ઉપધાન તપ",
+      titleEnglish: "Bhavya Upadhan Tap (Grand Spiritual Austerity)",
+      date: "December 18 - February 5",
+      location: "To be announced",
       description:
-        "Marking the day when Maharaj Saheb embraced monastic life and dedicated himself to spiritual pursuit.",
+        "A grand spiritual practice period where devotees undertake special austerities, fasting, and meditation. This intensive spiritual practice commemorates the teachings of Maharaj Saheb and provides an opportunity for deep spiritual growth.",
     },
     {
       id: 3,
-      title: "Memorial Day",
-      date: "2009 - Observed Annually",
-      location: "Multiple Locations",
+      title: "Janm Shatabdi Mahotshav",
+      titleEnglish: "Birth Centenary Celebration",
+      date: "1923 - 2023 (100th Birth Anniversary)",
+      location: "Multiple Locations Across India",
       description:
-        "Honoring the memory of Maharaj Saheb with special prayers and reflection on his teachings.",
+        "Year-long celebration marking the 100th birth anniversary of Jambuvijayji Maharaj Saheb. Special events, seminars, and cultural programs organized throughout the year to commemorate his life and contributions to Jain scholarship.",
     },
     {
       id: 4,
-      title: "Scholarly Seminars",
-      date: "Various Dates",
-      location: "Academic Institutions",
+      title: "Scholarly Seminars & Discourses",
+      titleEnglish: "Academic Discussions",
+      date: "Various Dates Throughout the Year",
+      location: "Academic Institutions & Community Centers",
       description:
-        "Academic discussions and presentations on Maharaj Saheb's scholarly contributions to Jain literature.",
+        "Regular academic discussions, seminars, and presentations on Maharaj Saheb's scholarly contributions to Jain literature, his research methodologies, and the preservation of ancient manuscripts.",
     },
   ];
 
@@ -66,9 +70,12 @@ const Events = () => {
               >
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
                   <div className="flex-grow">
-                    <h2 className="text-2xl font-serif font-bold text-primary mb-3">
+                    <h2 className="text-2xl font-serif font-bold text-primary mb-2">
                       {event.title}
                     </h2>
+                    <p className="text-lg text-foreground/70 mb-4 italic">
+                      {event.titleEnglish}
+                    </p>
                     <div className="flex flex-wrap gap-4 mb-4 text-sm text-muted-foreground">
                       <div className="flex items-center space-x-2">
                         <Calendar className="w-4 h-4" />
@@ -95,7 +102,7 @@ const Events = () => {
                 Stay Updated
               </h3>
               <p className="text-foreground/80 mb-6 max-w-md">
-                To receive notifications about upcoming events and commemorations, please contact us.
+                To receive notifications about upcoming events and commemorations, or to participate in organizing these events, please get in touch with us.
               </p>
               <a
                 href="/contact"
