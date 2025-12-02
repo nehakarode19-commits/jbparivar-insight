@@ -12,10 +12,10 @@ const Index = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative pt-20 pb-32 overflow-hidden">
+      <section className="relative pt-20 pb-16 overflow-hidden">
         <div className="absolute inset-0 hero-gradient"></div>
         <div className="container mx-auto px-4 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center min-h-[75vh]">
             {/* Text Content */}
             <div className="space-y-8 animate-fade-in">
               <div>
@@ -78,9 +78,9 @@ const Index = () => {
       </section>
 
       {/* About Preview */}
-      <section className="py-20 bg-card">
+      <section className="py-16 bg-card">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center mb-12 animate-fade-in">
+          <div className="max-w-4xl mx-auto text-center mb-10 animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-6">
               About Maharaj Saheb
             </h2>
@@ -113,10 +113,10 @@ const Index = () => {
       </section>
 
       {/* Quick Links */}
-      <section className="py-20">
+      <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
               <Card className="p-6 text-center hover:shadow-warm transition-all duration-300 group cursor-pointer animate-fade-in">
                 <a href="/gallery" className="block">
                   <div className="w-16 h-16 mx-auto mb-4 rounded-full spiritual-gradient flex items-center justify-center shadow-warm group-hover:scale-110 transition-transform">
@@ -178,7 +178,7 @@ const Index = () => {
       </section>
 
       {/* Quote Section */}
-      <section className="py-20 bg-gradient-to-br from-primary/10 to-secondary/10">
+      <section className="py-16 bg-gradient-to-br from-primary/10 to-secondary/10">
         <div className="container mx-auto px-4">
           <Card className="max-w-4xl mx-auto p-12 md:p-16 text-center shadow-soft border-primary/20 animate-fade-in">
             <div className="text-6xl text-primary mb-6">"</div>
